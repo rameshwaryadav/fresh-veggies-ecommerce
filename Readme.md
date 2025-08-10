@@ -73,13 +73,13 @@ Built with a robust backend using PHP and MySQL, and a responsive, attractive fr
 
 | Login Page                               | Homepage                               | Seller Dashboard                           |
 | ---------------------------------------- | -------------------------------------- | ------------------------------------------ |
-| ![Login Page](Screenshot/login.jpg) | ![Homepage](Screenshot/Home.jpg) | ![Seller Dashboard](Screenshot/deshbord.jpg) |
+| ![Login Page](screenshot/login.jpg) | ![Homepage](screenshot/Home.jpg) | ![Seller Dashboard](screenshot/deshbord.jpg) |
 
 ---
 
 ## About The Developer
 
-Hello! I'm [Your Name], a passionate web developer focused on creating clean, efficient, and user-friendly web applications.
+Hello! I'm [rameshwar yadav], a passionate web developer focused on creating clean, efficient, and user-friendly web applications.
 
-- **LinkedIn:** [https://linkedin.com/in/your-linkedin-profile](https://linkedin.com/in/rameshwar01)
-- **GitHub:** [https://github.com/your-github-username](https://github.com/rameshwaryadav)
+- **LinkedIn:** [https://linkedin.com/in/rameshwar01]
+- **GitHub:** [https://github.com/rameshwaryadav]
