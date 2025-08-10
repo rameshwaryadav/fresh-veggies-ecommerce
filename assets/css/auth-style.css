@@ -1,0 +1,86 @@
+/* --- Google Font --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* --- CSS Variables --- */
+:root {
+    --primary-color: #4CAF50;
+    --primary-dark: #388E3C;
+    --text-color: #333;
+    --light-text-color: #757575;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Basic Setup & Video Background --- */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.auth-hero-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Semi-transparent overlay for better text readability */
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* --- The Glassmorphism Form Container --- */
+.auth-form-container {
+    max-width: 420px;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow);
+    animation: fadeInSlideUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInSlideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.auth-form-container .brand-logo { font-size: 2.5em; font-weight: 700; color: #fff; text-decoration: none; margin-bottom: 10px; display: block; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+.auth-form-container h2 { margin: 0 0 25px 0; font-weight: 600; color: #fff; }
+.auth-form-container .success-message { background-color: rgba(232, 245, 233, 0.9); color: var(--primary-dark); padding: 10px; border-radius: 8px; margin-bottom: 20px; }
+
+/* --- Input Fields with Icons --- */
+.input-group { position: relative; margin-bottom: 20px; }
+.input-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--light-text-color); }
+.form-input { width: 100%; padding: 12px 12px 12px 45px; border: 1px solid rgba(255, 255, 255, 0.3); background: rgba(255, 255, 255, 0.2); border-radius: 8px; box-sizing: border-box; transition: all 0.3s; color: #fff; font-weight: 600; }
+.form-input::placeholder { color: rgba(255, 255, 255, 0.7); }
+.form-input:focus { border-color: var(--primary-color); box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5); outline: none; background: rgba(255, 255, 255, 0.3); }
+.password-toggle { position: absolute; right: 15px; top: 50%; transform: translateY(-50%); color: rgba(255, 255, 255, 0.7); cursor: pointer; }
+
+/* --- Buttons --- */
+.submit-button { background: linear-gradient(45deg, var(--primary-color), var(--primary-dark)); color: white; padding: 14px 25px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: 600; width: 100%; transition: all 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.submit-button:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
+.or-separator { display: flex; align-items: center; text-align: center; color: #fff; margin: 25px 0; }
+.or-separator::before, .or-separator::after { content: ''; flex: 1; border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+.or-separator:not(:empty)::before { margin-right: .25em; }
+.or-separator:not(:empty)::after { margin-left: .25em; }
+.social-login-buttons { display: flex; gap: 15px; }
+.social-btn { flex: 1; padding: 12px; border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 8px; text-decoration: none; color: #fff; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 10px; transition: all 0.3s; background: rgba(255, 255, 255, 0.1); }
+.social-btn:hover { background: rgba(255, 255, 255, 0.2); transform: translateY(-3px); }
+
+.auth-form-container .bottom-text { margin-top: 25px; color: #fff; }
+.auth-form-container a { color: #fff; text-decoration: underline; font-weight: 600; }
